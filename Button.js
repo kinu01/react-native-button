@@ -48,7 +48,7 @@ export default class Button extends Component {
       touchableProps.delayLongPress = this.props.delayLongPress;
     }
 
-    if (Platform.OS === 'ios') {
+    if (Platform.OS === 'ios' || Platform.OS == "web") {
       return (
         <TouchableOpacity
           {...touchableProps}

@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
   View,
-  ViewStyle
+  ViewStyle,
+  TextStyle
 } from 'react-native';
 
 import coalesceNonElementChildren from './coalesceNonElementChildren';

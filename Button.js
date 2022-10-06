@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   TouchableNativeFeedback,
   View,
-  ViewPropTypes
+  ViewStyle
 } from 'react-native';
 
 import coalesceNonElementChildren from './coalesceNonElementChildren';
@@ -18,13 +18,13 @@ export default class Button extends Component {
   static propTypes = {
     ...TouchableOpacity.propTypes,
     accessibilityLabel: PropTypes.string,
-    allowFontScaling: Text.propTypes.allowFontScaling,
-    containerStyle: ViewPropTypes.style,
-    disabledContainerStyle: ViewPropTypes.style,
+    allowFontScaling: PropTypes.bool,
+    containerStyle: ViewStyle,
+    disabledContainerStyle: ViewStyle,
     disabled: PropTypes.bool,
-    style: Text.propTypes.style,
-    styleDisabled: Text.propTypes.style,
-    childGroupStyle: ViewPropTypes.style,
+    style: TextStyle,
+    styleDisabled: TextStyle,
+    childGroupStyle: ViewStyle,
     androidBackground: PropTypes.object,
   };
 

@@ -16,18 +16,6 @@ import coalesceNonElementChildren from './coalesceNonElementChildren';
 const systemButtonOpacity = 0.2;
 
 export default class Button extends Component {
-  static propTypes = {
-    ...TouchableOpacity.propTypes,
-    accessibilityLabel: PropTypes.string,
-    allowFontScaling: PropTypes.bool,
-    containerStyle: ViewStyle,
-    disabledContainerStyle: ViewStyle,
-    disabled: PropTypes.bool,
-    style: TextStyle,
-    styleDisabled: TextStyle,
-    childGroupStyle: ViewStyle,
-    androidBackground: PropTypes.object,
-  };
 
   render() {
     let touchableProps = {
